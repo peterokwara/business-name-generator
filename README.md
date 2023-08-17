@@ -1,3 +1,82 @@
+<p align="center">
+  <h3 align="center">Business Name Generator</h3>
+
+  <p align="center">
+A web app that generates business names based on keywords, industry and tone.
+    <br>
+    </p>
+</p>
+
+<br>
+
+## Table of contents
+
+- [About the Website](#about-the-website)
+- [Technical](#technical)
+- [Licence](#license)
+- [Versions](#versions)
+- [Contact Information](#contact-information)
+
+### About the website
+
+This is a web app that generates business names based on keywords, industry and tone.
+
+<p align="center">
+  <img src="./assets/business-name-generator.gif"/>
+</p>
+
+### Technical
+
+#### Technology Used
+
+This project uses: sveltekit, tailwindcss, ai, openai, openai-edge
+
+#### Running the project
+
+Ensure that you have the openai api key in the `.env` file. This can be generated here https://platform.openai.com/account/api-keys
+
+Install the project dependencies by running
+
+```console
+pnpm install
+```
+
+And then navigate to https://localhost:5173 to view the project (in case no other sveltekit project is running).
+
+#### CONTRIBUTING
+
+I would/ We'd love to have your help in making **business name generator** better. The project is still very incomplete, but if there's an issue you'd like to see addressed sooner rather than later, let me(/us) know.
+
+Before you contribute though read the contributing guide here: [Contributing.md](https://github.com/peterokwara/business-name-generator/blob/master/CONTRIBUTING.md)
+
+For any concerns, please open an [issue](https://github.com/peterokwara/business-name-generator/issues), or JUST, [fork the project and send a pull request](https://github.com/peterokwara/business-name-generator/pulls).
+
+<hr>
+
+### License
+
+- see [LICENSE](https://github.com/peterokwara/business-name-generator/blob/master/LICENSE) file
+
+### Versions
+
+- Version 1.0 DATE 10/04/2022
+
+### Contact Information
+
+If you have found any bugs, or have any feedback or questions and or want to post a feature request please use the [Issuetracker](https://github.com/peterokwara/business-name-generator/issues) to report them.
+
+<hr>
+
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source-200x33.png?v=103)](#)
+
+<br>
+
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](https://github.com/peterokwara/business-name-generator/blob/master/LICENSE)
+
+
+
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
@@ -57,14 +136,14 @@ Basic form with all the elements
 
 ```html
 <main class="mt-32">
-	<div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+	<div class="px-4 pb-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<form class="space-y-8 divide-y divide-gray-200">
 			<div class="pt-8">
 				<div>
-					<h3 class="text-lg leading-6 font-medium text-gray-900">Business name generator</h3>
+					<h3 class="text-lg font-medium leading-6 text-gray-900">Business name generator</h3>
 					<p class="mt-1 text-sm text-gray-500">Generates a list of business names.</p>
 				</div>
-				<div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+				<div class="grid grid-cols-1 mt-6 gap-y-6 gap-x-4 sm:grid-cols-6">
 					<div class="sm:col-span-6">
 						<label for="keywords" class="block text-sm font-medium text-gray-700"> Keywords </label>
 						<div class="mt-1">
@@ -72,7 +151,7 @@ Basic form with all the elements
 								type="text"
 								name="keywords"
 								id="keywords"
-								class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+								class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
 							/>
 						</div>
 					</div>
@@ -84,7 +163,7 @@ Basic form with all the elements
 								type="text"
 								name="industry"
 								id="industry"
-								class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+								class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
 							/>
 						</div>
 					</div>
@@ -98,7 +177,7 @@ Basic form with all the elements
 								id="tone"
 								name="tone"
 								type="text"
-								class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+								class="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
 							/>
 						</div>
 					</div>
@@ -106,7 +185,7 @@ Basic form with all the elements
 			</div>
 			<button
 				type="submit"
-				class=" inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+				class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
 			>
 				Generate
 			</button>
@@ -119,7 +198,7 @@ Basic form with all the elements
 					id="suggestions"
 					name="suggestions"
 					rows="3"
-					class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+					class="block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
 				/>
 			</div>
 		</div>
@@ -128,7 +207,6 @@ Basic form with all the elements
 ```
 
 https://sdk.vercel.ai/docs/api-reference/use-completion
-
 
 install ai
 
