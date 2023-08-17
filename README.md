@@ -43,6 +43,14 @@ pnpm install
 
 And then navigate to https://localhost:5173 to view the project (in case no other sveltekit project is running).
 
+#### Step by step guide
+
+1. Create a new sveltekit project https://kit.svelte.dev/
+
+```console
+pnpm create svelte@latest my-app
+```
+
 #### CONTRIBUTING
 
 I would/ We'd love to have your help in making **business name generator** better. The project is still very incomplete, but if there's an issue you'd like to see addressed sooner rather than later, let me(/us) know.
@@ -72,10 +80,6 @@ If you have found any bugs, or have any feedback or questions and or want to pos
 <br>
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](https://github.com/peterokwara/business-name-generator/blob/master/LICENSE)
-
-
-
-
 
 # create-svelte
 
